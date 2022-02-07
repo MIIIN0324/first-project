@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/inquiryOrder.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="subVisual">
+            <p class="subVisual_title">support</p>
+            <img src="img/support.jpg" alt="support" class="pc_only">
+            <img src="img/support_mo.jpg" alt="support" class="mo_only">
+            <div class="location">
+                <p>
+                 <a href="" title="home">
+                    <img src="img/home.svg" alt="메인페이지 바로가기"> 
+                 </a>
+                </p>
+                <p>support</p>
+                <p>주문접수</p>
+            </div>
+        </div> <!-- //subVisual -->
+        
+        <div class="inquiry page_sub">
+            <h1>주문&nbsp;접수</h1>
+            <div class="inquiryCon">
+                <div class="inquiryBox">
+                    <span>상품명</span>
+                    <select required>
+                        <option value="" selected disabled hidden>선택</option>
+                        <option value="PP-480E">[프린터]&nbsp;PP-480E</option>
+                        <option value="PP-480BT">[프린터]&nbsp;PP-480BT</option>
+                        <option value="JPP-330M">[프린터]&nbsp;JPP-330M</option>
+                        <option value="JPP-S3">[스캐너]&nbsp;JPP-S3</option>
+                        <option value="A132">[PDA]&nbsp;A132</option>
+                    </select>
+                </div>
+                <div class="inquiryOrder">
+                    <div class="productBoxWrap">
+                        <div class="productBox">
+                            <span>[스캐너]&nbsp;S3</span>
+                            <div class="amount">
+                                <button type="button">&ndash;</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </div>
+                            <span>160,000원</span>
+                        </div>
+                        <div class="delect">
+                            <button>삭제</button>
+                        </div>
+                    </div> <!-- //productBoxWrap -->
+                    <div class="productBoxWrap">
+                        <div class="productBox">
+                            <span>[프린터]&nbsp;PP-480E</span>
+                            <div class="amount">
+                                <button type="button">&ndash;</button>
+                                <span>3</span>
+                                <button type="button">+</button>
+                            </div>
+                            <span>130,000원</span>
+                        </div>
+                        <div class="delect">
+                            <button>삭제</button>
+                        </div>
+                    </div> <!-- //productBoxWrap -->
+                </div>
+        
+                <div class="inquiryBox name">
+                    <span>주문자</span>
+                    <input type="text">
+                </div>
+                <div class="inquiryBox inquiry_phone">
+                    <span>전화번호</span>
+                    <select required>
+                        <option value="" disabled selected hidden>선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="019">019</option>
+                    </select>
+                    <span class="slash">&ndash;</span>
+                    <input type="tel" maxlength="4"> 
+                    <span class="slash">&ndash;</span>
+                    <input type="tel" maxlength="4">
+                </div>
+                <div class="inquiryBox inquiry_email">
+                    <span>이메일</span>
+                    <input type="text">
+                    <span class="slash">@</span>
+                    <input type="text" disabled>
+                    <select required>
+                        <option value="" disabled selected hidden>선택</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="korea.com">korea.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="yahoo.co.kr">yahoo.co.kr</option>
+                    </select>
+                </div>
+                <div class="inquiryBox inquiry_addr">
+                    <span>주소</span>
+                    <input type="text" disabled>
+                    <button>주소찾기</button>
+                    <input type="text" disabled>
+                    <input type="text" placeholder="상세주소를 입력해주세요">
+                </div>
+                <div class="inquiryBox name">
+                    <span>입금자명</span>
+                    <input type="text">
+                </div>
+                <div class="inquiryBox inquiry_proof">
+                    <span>증빙자료</span>
+                    <div class="check">
+                        <label>
+                            <input type="radio" name="proof">
+                            <span></span>
+                        </label>
+                        현금영수증
+                    </div>
+                    <div class="check">
+                        <label>
+                            <input type="radio" name="proof">
+                            <span></span>
+                        </label>
+                        세금계산서
+                    </div>
+                </div>
+                <div class="inquiryBox name">
+                    <span>택배사</span>
+                    <input type="text">
+                </div>
+                <div class="inquiryBox name">
+                    <span>대리점명</span>
+                    <input type="text">
+                </div>
+            </div> <!-- //inquiryCon -->
+            <div class="inquiryTotal">
+                <div class="totalLeft">
+                    <div class="priceWrap">
+                        <span>상품금액</span>
+                        <span class="price">550,000원</span>
+                        <span>+</span>
+                        <span>배송비</span>
+                        <span class="price">3,000원</span>
+                    </div>
+                </div>
+                <div class="totalRight">
+                    <div class="priceWrap">
+                        <span>총&nbsp;주문&nbsp;금액</span>
+                        <span class="price">553,000원</span>
+                    </div>
+                </div>
+            </div>
+            <div class="agreeBox">
+               개인정보&nbsp;수집&nbsp;및&nbsp;이용동의
+                <label>
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+            <div class="btn">
+                <button type="submit">주문하기</button>
+            </div>
+        </div> <!-- //inquiry -->
+    </div>
+</body>
+</html>

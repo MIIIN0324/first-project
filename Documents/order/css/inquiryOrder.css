@@ -1,0 +1,560 @@
+@charset "utf-8";
+
+/*비주얼이미지*/
+.mo_only{display: none;}
+
+.subVisual{width: 100%; margin-top: 80px; position: relative;}
+
+.subVisual_title{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    -webkit-transform: translate(-50%, -45%);
+    -ms-transform: translate(-50%, -45%);
+    -moz-transform: translate(-50%, -45%);
+    -o-transform: translate(-50%, -45%);
+}
+
+.pc_only{width: 100%; height: 300px;}
+
+/*위치*/
+.location{
+    color: #c4c4c4;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    -webkit-transform: translate(-50%, -65%);
+    -ms-transform: translate(-50%, -65%);
+    -moz-transform: translate(-50%, -65%);
+    -o-transform: translate(-50%, -65%);
+}
+.location > p:after{content: '\2771'; font-size: 14px; margin: 0px 10px;}
+
+.location > p:last-child:after{content: "";}
+
+.location > p:first-child{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+.location > p:first-child > a img{width: 16px; padding-top:2px;}
+.location > p:first-child a:hover{border-bottom: 1px solid #c4c4c4; margin-bottom: -1px;}
+
+.inquiry {
+    width: 1200px;
+    margin: 85px auto;
+}
+.inquiry > h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #052C69;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.inquiryCon {
+    border-top: 3px solid #052C69;
+}
+.inquiryBox {
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.inquiryBox span {
+    display: inline-block;
+    width: 20%;
+    height: 74px;
+    line-height: 74px;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 10px;
+    float: left;
+}
+.inquiryBox select {
+    width: 35%;
+    height: 46px;
+    font-size: 18px;
+    border: 1px solid #CCCCCC;
+    padding-left: 10px;
+    margin-top: 14px;
+    float: left;
+}
+.name input {width: 25%;}
+.inquiryBox input {
+    width: 20%;
+    height: 46px;
+    font-size: 18px;
+    border: 1px solid #cccccc;
+    padding-left: 10px;
+    margin-top: 14px;
+    float: left;
+}
+.name input {width: 25%;}
+.inquiry_phone select {
+    width: 15%;
+}
+.inquiry_phone .slash {
+    width: 2.5%;
+    height: 100%;
+    color: #707070;
+    text-align: center;
+    padding: 0;
+    float: left;
+}
+.inquiry_email .slash {
+    width: 2.5%;
+    height: 100%;
+    color: #707070;
+		font-size: 18px;
+    text-align: center;
+    padding: 0;
+    float: left;
+}
+.inquiry_email select {
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 14px
+}
+.inquiry_addr {
+    width: 100%;
+    height: 188px;
+}
+.inquiry_addr span {
+    height: 188px;
+}
+.inquiry_addr input:first-of-type {
+     width: 25%;
+}
+.inquiry_addr input::placeholder {color: #959595;}
+.inquiry_addr button {
+    width: 12%;
+    height: 46px;
+    background-color: rgb(204, 204, 204, 0.3);
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 14px 0 0 25px;
+}
+.inquiry_addr input:nth-of-type(2),
+.inquiry_addr input:nth-of-type(3) {
+    display: block;
+    width: 55%;
+    height: 46px;
+    margin-top: 10px;
+}
+.inquiry_proof .check {
+    display: inline-block;
+    width: 125px;
+    height: 27px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.inquiry_proof .check:first-of-type {margin-right: 50px;}
+.inquiry_proof .check input {display: none;}
+.inquiry_proof .check span {display: none;}
+.inquiry_proof .check label {
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 15px;
+}
+.inquiry_proof .check input[type="radio"]:checked + span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #052C69;
+    margin-top:5px;
+    margin-left: 5px;
+}
+.inquiryTotal {
+    width: 100%;
+    height: 104px;
+    border-top: 2px solid #052C69;
+    border-bottom: 2px solid #052C69;
+    margin-top: 60px;
+}
+.totalLeft {
+    width: 55%;
+    height: 100px;
+    float: left;
+}
+.totalLeft .priceWrap {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+		text-align: center;
+}
+.totalLeft span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.totalLeft .price {
+    font-size: 20px;
+    font-weight: 500;
+}
+.totalRight {
+    width: 45%;
+    height: 100px;
+    float: right;
+}
+.totalRight .priceWrap {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+		text-align: center;
+    margin: 0 auto;
+}
+.totalRight span {
+    font-size: 20px;
+}
+.totalRight span:first-child {margin-right: 30px;}
+.totalRight .price {
+    font-size: 24px;
+    font-weight: 500;
+    color: hsl(217, 91%, 22%);
+}
+.inquiry .agreeBox {
+    width: 270px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.inquiry .agreeBox label {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    float: right;
+}
+.inquiry .agreeBox input {display:none;}
+.inquiry .agreeBox input[type="checkbox"]:checked + span {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    width: 20px;
+    height: 16px;
+    display: block;
+    background: url(../img/check.svg) no-repeat center/cover;
+}
+.inquiry .btn {
+    width: 172px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.inquiry .btn button {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #052C69;
+}
+.inquiryOrder {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.inquiryOrder .productBoxWrap {
+    width: 80%;
+    height: 70px;
+    margin-bottom: 15px;
+}
+.inquiryOrder .productBoxWrap:last-of-type {
+    margin-bottom: 0;
+}
+.productBoxWrap .productBox {
+    display: flex;
+    width: 80%; 
+    height: 70px;
+    line-height: 70px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 0 3%;
+    float: left;
+}
+.productBoxWrap .productBox > span {width: 50%;font-size: 18px; font-weight: 500;
+}
+.productBoxWrap .productBox > span:last-child {width: 27%; text-align: right;}
+.productBoxWrap .productBox .amount {
+    display: flex;
+    width: 23%;
+    height: 37px;
+    background-color: #fff;
+    margin-top: 17px;
+}
+.productBoxWrap .productBox .amount button {
+    width: 26.9%;/*35px*/
+    height: 37px;
+    line-height:35px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    float: left;
+}
+.productBoxWrap .productBox .amount span {
+    width: 46.2%;/*60px*/
+    height: 37px;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    float: left;
+}
+.productBoxWrap .productBox .amount button:last-child {float: right;}
+.productBoxWrap .delect {
+    width: 16%;
+    height: 64px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd; 
+    float: right;
+    margin-top: 3px;
+}
+.productBoxWrap .delect button {
+    width: 100%;
+    height: 100%;
+    line-height: 62px;
+    font-size: 18px;
+}
+.productBoxWrap:last-of-type .productBox {margin-bottom: 0;}
+@media (max-width: 1199px){
+    .page_sub{width: 100% !important; padding: 0px 40px;}   
+}
+@media (max-width: 999px){
+.page_sub{width: 100% !important; padding: 0px 20px !important; margin: 70px auto !important;}
+.page_sub > h1{margin-bottom: 70px;}
+.subVisual{margin-top: 70px !important;} 
+}
+@media (max-width: 768px){
+.pc_only{display: none;}
+.mo_only{display: block !important; width: 100%; height: 200px;}
+.subVisual_title{
+	font-size: 40px !important;
+	top: 43%;
+	transform: translate(-50%, -43%);
+	-webkit-transform: translate(-50%, -43%);
+	-ms-transform: translate(-50%, -43%);
+	-moz-transform: translate(-50%, -43%);
+	-o-transform: translate(-50%, -43%);
+}
+.location{
+	top: 68%;
+	transform: translate(-50%, -68%);
+	-webkit-transform: translate(-50%, -68%);
+	-ms-transform: translate(-50%, -68%);
+	-moz-transform: translate(-50%, -68%);
+	-o-transform: translate(-50%, -68%);
+}
+.inquiryBox span {
+	font-size: 16px;
+}
+.inquiryBox select {
+	font-size: 16px;
+}
+.name input {width: 35%;}
+.inquiryBox input {
+   width: 25%;
+   font-size: 16px;
+}
+.name input {width: 35%;}
+.inquiry_phone select {width: 20%;}
+.inquiry_email .slash {font-size: 15px;}
+.inquiry_email select {width: 25%;}
+.inquiry_addr input:first-of-type {width: 40%;}
+.inquiry_addr button {
+  width: 15%;
+	font-size: 14px;
+}
+.inquiry_addr input:nth-of-type(2),
+.inquiry_addr input:nth-of-type(3) {
+  width: 80%;
+	font-size: 14px;
+}
+.inquiry_proof .check {font-size: 16px;}
+.totalLeft span {
+  font-size: 16px;
+  margin-right: 7px;
+}
+.totalLeft .price {font-size: 18px;}
+.totalRight span {font-size: 18px;}
+.totalRight span:first-child {margin-right: 15px;}
+.totalRight .price {font-size: 22px;}
+.inquiry .agreeBox {
+	font-size: 18px;
+	width: 250px;
+}
+.inquiryOrder .productBoxWrap {width: 100%;}
+.productBoxWrap .productBox > span {font-size: 16px;}
+.productBoxWrap .productBox .amount button {font-size: 14px;}
+.productBoxWrap .productBox .amount span {font-size: 14px;}
+.productBoxWrap .delect button {font-size: 16px;}
+}
+@media (max-width: 600px){
+.inquiryBox span {font-size: 14px;}
+.inquiryBox select {
+	font-size: 14px;
+	padding-left: 5px;
+}
+.name input {width: 35%;}
+.inquiryBox input {
+	width: 25%;
+	font-size: 14px;
+}
+.inquiry_email .slash {
+	font-size: 12px;
+	width: 3%;
+}
+.inquiry_email select {
+	width: 25%;
+	margin-left: 7px;
+}
+.inquiry_addr input:first-of-type {
+     width: 40%;
+}
+.inquiry_addr button {
+	width: 15%;
+	font-size: 12px;
+	margin: 14px 0 0 20px;
+}
+.inquiry_addr input:nth-of-type(2),
+.inquiry_addr input:nth-of-type(3) {
+	width: 80%;
+	font-size: 14px;
+}
+.inquiry_proof .check {
+	width: 110px;
+	font-size: 14px;
+}
+.inquiry_proof .check:first-of-type {margin-right: 30px;}
+.inquiry_proof .check label {
+	width: 23px;
+	height: 23px;
+	margin-right: 10px;
+}
+.inquiry_proof .check input[type="radio"]:checked + span {
+	width: 11px;
+	height: 11px;
+}
+.totalLeft .priceWrap {text-align: left;}
+.totalLeft span {
+	font-size: 14px;
+	margin-right: 3px;
+}
+.totalLeft .price {font-size: 16px;}
+.totalRight .priceWrap {text-align: right;}
+.totalRight span {font-size: 15px;}
+.totalRight span:first-child {margin-right: 5px;}
+.totalRight .price {font-size: 18px;}
+.inquiry .agreeBox {
+	font-size: 16px;
+	width: 220px;
+}
+.inquiry .agreeBox label {
+	position: relative;
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	border: 1px solid #ccc;
+	float: right;
+}
+.inquiry .agreeBox input {display:none;}
+.inquiry .agreeBox input[type="checkbox"]:checked + span {
+	position: absolute;
+	top: 5px;
+	right: 4px;
+	width: 18px;
+	height: 14px;
+	display: block;
+	background: url(../img/check.svg) no-repeat center/cover;
+}
+.inquiry .btn {width: 162px;}
+.inquiry .btn button {font-size: 16px;}
+.inquiryOrder {padding: 20px 0px;}
+.productBoxWrap .productBox > span {font-size: 14px;}
+.productBoxWrap .productBox .amount button {font-size: 12px;}
+.productBoxWrap .productBox .amount span {font-size: 12px;}
+.productBoxWrap .delect button {font-size: 14px;}
+}
+@media (max-width: 499px){
+html.touch *:hover{pointer-events: none !important;}
+.page_sub{margin: 50px auto !important; padding: 0px 15px !important;}
+.page_sub > h1{margin-bottom: 50px; font-size: 9vw;}
+.location > p:last-child{white-space: nowrap;}
+.inquiryBox span {font-size: 12px;}
+.inquiryBox select {font-size: 12px;}
+.name input {width: 40%;}
+.inquiry_email .slash {font-size: 11px;}
+.inquiry_addr input:first-of-type {width: 40%;}
+.inquiry_addr button {font-size: 11px;}
+.inquiry_addr input:nth-of-type(2),
+.inquiry_addr input:nth-of-type(3) {font-size: 12px;}
+.inquiry_proof .check {
+	width: 110px;
+	font-size: 12px;
+	line-height: 23px;
+}
+.inquiry_proof .check:first-of-type {margin-right: 20px;}
+.totalLeft .priceWrap {text-align: left;}
+.totalLeft span {
+	font-size: 11px;
+	margin-right: 3px;
+}
+.totalLeft .price {font-size: 13px;}
+.totalRight span {font-size: 13px;}
+.totalRight .price {font-size: 15px;}
+.inquiry .agreeBox {
+	font-size: 14px;
+	width: 200px;
+}
+.inquiry .agreeBox label {
+	width: 25px;
+	height: 25px;
+}
+.inquiry .agreeBox input[type="checkbox"]:checked + span {
+	position: absolute;
+	top: 4.5px;
+	right: 4px;
+	width: 17px;
+	height: 13px;
+}
+.inquiry .btn {width: 152px;}
+.inquiry .btn button {font-size: 14px;}
+}
+@media (max-width: 375px){
+.productBoxWrap .productBox > span {font-size: 13px;}
+}
+@media (max-width:360px){
+    .location{width: 52%;}
+}
+@media (max-width: 320px){
+.location{width: 59%;}   
+.subVisual_title{font-size: 36px !important;}
+.page_sub > h1{font-size: 10vw;}
+.productBoxWrap .productBox > span {font-size: 11px;}
+.productBoxWrap .productBox .amount button {font-size: 11px;}
+.productBoxWrap .productBox .amount span {font-size: 11px;}
+.productBoxWrap .delect button {font-size: 12px;}
+}
+@media (max-width: 280px){
+    .location{width: 67%;}
+}
