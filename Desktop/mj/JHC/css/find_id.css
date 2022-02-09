@@ -1,0 +1,686 @@
+@charset "utf-8";
+.wrap {}
+header {
+    width: 768px;
+    margin: 0 auto;
+}
+header h1 {
+    width: 250px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+header h1 img {width: 100%; height: 100%;}
+
+.conWrap {
+    width: 768px;
+    height: auto;
+    margin: 0 auto;
+}
+.find {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #eee;
+}
+.find a {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 60px;
+    font-size: 1.8rem;
+}
+/*
+.find a:first-child {
+    font-weight: bold;
+    color: #052C69;
+    border-bottom: 2px solid #052C69;
+}
+*/
+.find a:active {
+    font-weight: bold;
+    color: #052C69;
+    border-bottom: 2px solid #052C69;
+}
+.findId {
+    width: 100%;
+    height: 388px;
+    display: block;
+}
+.findId h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.idform {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    padding-top: 15px;
+}
+.idform label {
+    width: 12%;
+    height: 45px;
+    line-height: 45px;
+    text-align: right;
+    padding-right: 2.4%;
+    font-size: 1.6rem;
+}
+.idform input {
+    width: 88%;
+    height: 45px;
+    font-size: 1.3rem;
+    color: #888;
+    padding-left: 10px;
+    border: 1px solid #888;
+}
+.phone select {
+    width: 16%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+}
+.phone input {
+    width: 56%;
+    border-right: none;
+    border-left: none;
+}
+.phone button {
+    width: 16%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3rem;
+    border: 1px solid #888;
+    color: #fff;
+    background-color: rgba(5, 44, 105, 0.9);
+}
+.logi select {
+    width: 88%;
+    height: 45px;
+    line-height:45px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+}
+.findPw {
+    position: relative;
+    top: 0px; /*264*/
+    display: block;
+    width: 768px;
+    height: 313px;
+    display: none;
+}
+.findPw h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.btnWrap {
+    width: 53.38%;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+}
+.btnWrap a {
+    display: inline-block;
+    width: 48.8%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #052C69;
+    border: 1px solid #052C69;
+}
+.btnWrap a:first-child {
+    margin-right: 1.45%
+}
+.btnWrap a:last-child {
+    color: #fff;
+    background-color: #052c69;
+}
+
+@media all and (max-width: 1024px) {
+.wrap {}
+header {
+    width: 75%; /*768px;*/
+/*    margin: 0 auto;*/
+}
+/*
+header h1 {
+    width: 250px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+*/
+.conWrap {
+    width: 75%;
+}
+/*
+.find {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #eee;
+}
+.find a {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 60px;
+    font-size: 1.8rem;
+}
+.find a:active {
+    font-weight: bold;
+    color: #052C69;
+    border-bottom: 2px solid #052C69;
+}
+*/
+.findId {
+    width: 100%;
+    height: 510px;
+    display: block;
+    margin: 0 auto;
+}
+.findId h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.idform {
+    display: block;
+/*    width: 100%;*/
+    height: 100px;
+    padding-top: 0px;
+}
+.idform label {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+/*
+    text-align: right;
+    padding-right: 2.4%;
+    font-size: 1.6rem;
+*/
+}
+.idform input {
+    width: 100%;
+/*
+    height: 45px;
+    font-size: 1.3rem;
+    color: #888;
+    padding-left: 10px;
+*/
+    margin-top: 10px;
+    border: 1px solid #888;
+}
+.phone label {
+    margin-bottom: 10px;
+}
+.phone select {
+    width: 22%;
+    height: 45px;
+    line-height: 45px;
+/*
+    font-size: 1.4rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+    float: left;
+}
+.phone input {
+    display: block;
+    width: 58%;
+/*
+    border-right: none;
+    border-left: none;
+*/
+    margin-top: 0;
+    float: left;
+}
+.phone button {
+    width: 20%;
+/*
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3rem;
+    border: 1px solid #888;
+    color: #fff;
+    background-color: rgba(5, 44, 105, 0.9);
+*/
+}
+.logi select {
+    width: 100%;
+    margin-top: 10px;
+/*
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.findPw {
+/*
+    position: relative;
+    top: 0px;
+    display: block;
+*/
+    width: 100%;
+    height: 410px;
+    margin: 0 auto;
+/*    display: none;*/
+}
+/*
+.findPw h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+}
+*/
+.btnWrap {
+    width: 60%;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+}
+.btnWrap a {
+/*
+    display: inline-block;
+    width: 48.8%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #052C69;
+    border: 1px solid #052C69;
+*/
+    float: left;
+    margin-top: 45px;
+}
+.btnWrap a:first-child {
+    margin-right: 2.4%
+}
+/*
+.btnWrap a:last-child {
+    color: #fff;
+    background-color: #052c69;
+}  
+*/
+}
+@media all and (max-width: 768px) {
+.wrap {}
+/*
+header {
+    width: 75%;
+    margin: 0 auto;
+}
+*/
+header h1 {
+    width: 200px;
+    height: 35px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+/*
+.conWrap {
+    width: 75%;
+}
+*/
+.find {
+    height: 50px; /* 60 */
+    line-height: 50px;
+/*    margin-bottom: 50px;*/
+}
+.find a {
+/*
+    display: inline-block;
+    float: left;
+    width: 50%;
+*/
+    height: 50px; /* 50 */
+    font-size: 1.6rem;
+}
+.findId {
+    width: 100%;
+    height: 442px;
+/*
+    display: block;
+    margin: 0 auto;
+*/
+}
+.findId h2 {
+    font-size: 2.8rem;
+/*
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+*/
+}
+.idform {
+    height: 90px;
+/*
+    display: block;
+    height: 100px;
+    padding-top: 0px;
+*/
+}
+.idform label {
+/*
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+*/
+    font-size: 1.5rem;
+/*    text-align: left;*/
+/*
+    text-align: right;
+    padding-right: 2.4%;
+    font-size: 1.6rem;
+*/
+}
+.idform input {
+    width: 100%;
+    font-size: 1.2rem;
+/*
+    height: 45px;
+    color: #888;
+    padding-left: 10px;
+*/
+    margin-top: 5px;
+    border: 1px solid #888;
+}
+.phone label {
+    margin-bottom: 5px;
+}
+.phone select {
+    width: 22%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3rem;
+/*
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+    float: left;
+}
+.phone input {
+    display: block;
+    width: 58%;
+/*
+    border-right: none;
+    border-left: none;
+*/
+    margin-top: 0;
+    float: left;
+}
+.phone button {
+    width: 20%;
+    font-size: 1.2rem;
+/*
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #888;
+    color: #fff;
+    background-color: rgba(5, 44, 105, 0.9);
+*/
+}
+.logi select {
+    width: 100%;
+    margin-top: 5px;
+/*
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.findPw {
+/*
+    position: relative;
+    top: 0px;
+    display: block;
+*/
+    height: 352px;
+/*    display: none;*/
+}
+.findPw h2 {
+    font-size: 2.8rem;
+/*
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+*/
+}
+.btnWrap {
+    width: 80%;
+/*
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+*/
+}
+.btnWrap a {
+/*
+    display: inline-block;
+    width: 48.8%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #052C69;
+    border: 1px solid #052C69;
+    float: left;
+*/
+    margin-top: 75px;
+    font-size: 1.3rem;
+}
+.btnWrap a:first-child {
+    margin-right: 2.4%
+}
+/*
+.btnWrap a:last-child {
+    color: #fff;
+    background-color: #052c69;
+}  
+*/
+}
+@media all and (max-width: 500px) {
+    .wrap {}
+/*
+header {
+    width: 75%;
+    margin: 0 auto;
+}
+*/
+header h1 {
+    width: 150px;
+    height: 26.5px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.conWrap {
+    width: 85%;
+}
+.find {
+    height: 50px; /* 60 */
+    line-height: 50px;
+/*    margin-bottom: 50px;*/
+}
+.find a {
+/*
+    display: inline-block;
+    float: left;
+    width: 50%;
+*/
+    height: 50px; /* 50 */
+    font-size: 1.6rem;
+}
+.findId {
+    width: 100%;
+    height: 442px;
+/*
+    display: block;
+    margin: 0 auto;
+*/
+}
+.findId h2 {
+    font-size: 2.6rem;
+/*
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+*/
+}
+.idform {
+    height: 90px;
+/*
+    display: block;
+    height: 100px;
+    padding-top: 0px;
+*/
+}
+.idform label {
+/*
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+*/
+    font-size: 1.4rem;
+/*    text-align: left;*/
+/*
+    text-align: right;
+    padding-right: 2.4%;
+    font-size: 1.6rem;
+*/
+}
+.idform input {
+    width: 100%;
+    font-size: 1.2rem;
+/*
+    height: 45px;
+    color: #888;
+    padding-left: 10px;
+*/
+    margin-top: 5px;
+    border: 1px solid #888;
+}
+.phone label {
+    margin-bottom: 5px;
+}
+.phone select {
+    width: 23%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.2rem;
+/*
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+    float: left;
+}
+.phone input {
+    display: block;
+    width: 55%;
+/*
+    border-right: none;
+    border-left: none;
+*/
+    margin-top: 0;
+    float: left;
+}
+.phone button {
+    width: 22%;
+    font-size: 1.1rem;
+/*
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #888;
+    color: #fff;
+    background-color: rgba(5, 44, 105, 0.9);
+*/
+}
+.logi select {
+    width: 100%;
+    margin-top: 5px;
+/*
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.findPw {
+/*
+    position: relative;
+    top: 0px;
+    display: block;
+*/
+    height: 352px;
+/*    display: none;*/
+}
+.findPw h2 {
+    font-size: 2.6rem;
+/*
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 45px;
+*/
+}
+.btnWrap {
+    width: 80%;
+/*
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+*/
+}
+.btnWrap a {
+/*
+    display: inline-block;
+    width: 48.8%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #052C69;
+    border: 1px solid #052C69;
+    float: left;
+*/
+    margin-top: 55px;
+    font-size: 1.3rem;
+}
+.btnWrap a:first-child {
+    margin-right: 2.4%
+}
+/*
+.btnWrap a:last-child {
+    color: #fff;
+    background-color: #052c69;
+}  
+*/
+}
+
+

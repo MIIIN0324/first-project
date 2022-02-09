@@ -1,0 +1,1392 @@
+@charset "utf-8";
+body {
+    background-color: #F8F9FA;
+}
+.wrap {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    margin-bottom: 65px;
+    background-color: #fff;
+}
+header {
+    width: 64%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+header h1 {
+    width: 250px;
+    height: 44px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+header h1 img {
+    width: 100%;
+    height: 100%;
+}
+.signup {
+    width: 70%;
+    margin: 0 auto; 
+}
+.signup h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+.signup form {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+.sg_form {
+   display: inline-flex;
+    width: 100%;
+    height:75px;
+    line-height: 75px;
+    border-bottom: 1px solid #eee; 
+}
+.sg_form label {
+    width: 26%;
+    height: 75px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+}
+.sg_form label span {
+    font-size: 1.4rem;
+    color: #E84743;
+    margin-right: 2px;
+}
+.sg_form .formInner {
+   display: inline-flex;
+    width: 74%;
+    padding: 15px 0;
+}
+.sg_form .formInner input {
+    width: 61.61%;
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.sg_form .formInner a {
+    width: 17.6%;
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.sg_form .eInner {
+    display: inline-flex;
+    width: 74%;
+    padding: 15px 0;
+}
+.sg_form .eInner input {
+    width: 30%;
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 3%;
+    height: 45px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sg_form .eInner input:last-of-type {
+    width: 35%;
+}
+.sg_form .eInner select {
+    width: 30%;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: 1px solid #888;
+}
+.sg_form .phInner select {
+    width: 20%;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-right: 2%;
+    border: 1px solid #888;
+}
+.sg_form .phInner input {
+    width: 46%;
+}
+.sg_form .mtype span {
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+.sg_form .mtype input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+.sg_form .deInner select {
+    width: 30%;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+}
+.bizWrap {
+    width: 100%;
+    margin-top: 60px;;
+}
+.biz {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+.biz .biz_form {
+    display: inline-flex;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    border-bottom: 1px solid #eee;
+}
+.biz .biz_form label {
+    width: 100%;
+}
+.biz .biz_form label > span {
+    width: 26%;
+    height: 75px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+    float: left;
+}
+.biz .biz_form label > input {
+    width: 45.57%;
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.biz .addr {
+    width: 100%;
+    height: 195px;
+    border-bottom: 1px solid #eee;
+}
+.biz .addr label{
+    display: block;
+    float: left;
+    width: 26%;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 15px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+}
+.biz .addr input {
+    height: 45px;
+    line-height: 43px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.biz .addr input:first-of-type{
+    display: inline-block;
+    width: 45.57%;
+}
+.biz .addr input:nth-of-type(2),
+.biz .addr input:nth-of-type(3) {
+    display: block;
+    width: 59.89%;
+    margin-left: 26%;
+}
+.biz .addr a {
+    display: inline-block;
+    width: 13.02%;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 1px solid #888;
+    margin-left: 1.3%;
+    margin-top: 15px;
+}
+.biz .addr a:hover {
+    color: #fff;
+    background-color: #052C69;
+}
+.btnWrap {
+    width: 54%; /*414*/
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.btnWrap a {
+    display: inline-block;
+    width: 48%;
+    height: 50px;
+    line-height: 48px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+    background-color: #052C69;
+}
+.btnWrap a:first-child {
+    color: #052C69;
+    border: 1px solid #052c69;
+    background-color: #fff;
+    margin-right: 2.4%;
+}
+.bizWrap {display: none;}
+@media all and (max-width: 1290px) {
+.wrap {
+    width: 93.02%;
+}
+header {
+    width: 64%; /*768px*/
+}
+header h1 {
+    width: 250px;
+    height: 44px;
+}
+.signup {
+    width: 70%;
+}
+.signup h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+.signup form {
+    width: 100%;
+}
+}
+@media all and (max-width: 1024px) {
+.wrap {
+    width: 93.02%;
+/*    margin-bottom: 65px;*/
+}
+header {
+    width: 64%; /*768px*/
+/*    padding-top: 50px;*/
+}
+header h1 {
+    width: 200px;
+    height: 35px;
+/*    margin-bottom: 60px;*/
+}
+.signup {
+    width: 70%; /*768px*/
+}
+.signup h2 {
+    font-size: 1.8rem;
+}
+.signup form {
+    width: 100%;
+/*    margin-top: 10px;*/
+}
+.sg_form {
+    display: block;
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    margin-top: 10px;
+    border-bottom: none;
+}
+.sg_form label {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+    font-size: 1.4rem;
+    float: left;
+}
+/*
+.sg_form label span {
+    font-size: 1.4rem;
+    color: #E84743;
+    margin-right: 2px;
+}
+*/
+.sg_form .formInner {
+   display: inline-block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    float: left;
+}
+.sg_form .formInner input {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.sg_form .formInner a {
+    display: inline-block;
+    width: 18%;
+/*
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+*/
+    margin-left: 1%;
+}
+.sg_form .idInner input {
+    width: 80%;
+}
+.sg_form .eInner {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+.sg_form .eInner input {
+    width: 30.5%;
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 3%;
+    font-size: 1.1rem;
+/*
+    height: 45px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0px;
+*/
+}
+.sg_form .eInner input:last-of-type {
+    width: 35%;
+}
+.sg_form .eInner select {
+    width: 28%;
+    height: 43px;
+    margin-left: 1%; /*10*/
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.sg_form .phInner select {
+    width: 30.5%;
+    height: 43px;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+*/
+    margin-right: 1%;
+}
+.sg_form .phInner input {
+    width: 67.5%;
+}
+.mtypeWrap {
+    height: 65px;
+    line-height: 65px;
+}
+.mtypeWrap label {
+    width: 25%;
+    line-height: 70px;   
+}
+.mtypeWrap .mtype {
+    width: 80%;
+    line-height: 70px;
+}
+.sg_form .mtype span {
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+.sg_form .mtype input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+.delivery {
+    height: 70px;
+}
+.delivery label {
+    width: 25%;
+    line-height: 70px;
+}
+.delivery .deInner {
+    width: 70%;
+    line-height: 70px;
+}
+.delivery .deInner select {
+    width: 45%;
+    height: 43px;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.bizWrap {
+    width: 100%;
+    margin-top: 60px;;
+}
+/*
+.biz {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+*/
+.biz .biz_form {
+/*
+    display: inline-flex;
+    width: 100%;
+*/
+    height: 75px;
+    line-height: 75px;
+    margin-top: 10px;
+/*    border-bottom: 1px solid #eee;*/
+}
+.biz .biz_form label {
+    width: 100%;
+}
+.biz .biz_form label > span {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+/*    font-size: 1.4rem;*/
+    float: left;
+}
+.biz .biz_form label > input {
+    width: 100%;
+/*
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+*/
+    margin-top: 0px;
+}
+.biz .addr {
+    width: 100%;
+    height: 197px;
+    border-bottom: none;
+}
+.biz .addr label{
+/*
+    display: block;
+    float: left;
+*/   
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding-left: 0px;
+/*    font-size: 1.4rem;*/
+}
+.biz .addr input {
+/*
+    height: 45px;
+    line-height: 43px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+*/
+    margin-top: 10px;
+    
+}
+.biz .addr input:first-of-type{
+    display: inline-block;
+    width: 65%;
+    margin-top: 0px;
+}
+.biz .addr input:nth-of-type(2),
+.biz .addr input:nth-of-type(3) {
+    display: block;
+    width: 100%;
+    margin-left: 0%;
+}
+.biz .addr a {
+    display: inline-block;
+    width: 18%;
+    height: 45px;
+/*
+    line-height: 43px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #888;
+    margin-left: 1.3%;
+*/
+    margin-top: 0px;
+}
+.btnWrap {
+    width: 62%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.btnWrap a {
+    display: inline-block;
+    width: 48%;
+    height: 50px;
+    line-height: 48px;
+    font-size: 1.6rem;
+/*
+    text-align: center;
+    color: #fff;
+    background-color: #052C69;
+*/
+}
+}
+@media all and (max-width: 768px) {
+.wrap {
+    width: 93.02%;
+/*    margin-bottom: 65px;*/
+}
+header {
+    width: 64%; /*768px*/
+    padding-top: 40px;
+}
+header h1 {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 50px; /**/
+}
+.signup {
+    width: 72%; /*768px*/
+}
+.signup h2 {
+    font-size: 1.7rem;
+}
+.signup form {
+    width: 100%;
+/*    margin-top: 10px;*/
+}
+.sg_form {
+    display: block;
+/*    width: 100%;*/
+    height: 80px;
+    line-height: 80px;
+/*
+    margin-top: 10px;
+    border-bottom: none;
+*/
+}
+.sg_form label {
+/*
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+    font-size: 1.4rem;
+    float: left;
+*/
+}
+/*
+.sg_form label span {
+    font-size: 1.4rem;
+    color: #E84743;
+    margin-right: 2px;
+}
+*/
+.sg_form .formInner {
+    display: inline-block;
+    width: 100%;
+    height: 40px; /*45*/
+    line-height: 40px; /*45*/
+    padding: 0;
+    float: left;
+}
+.sg_form .formInner input {
+    display: inline-block;
+    width: 100%;
+    height: 40px; /*45*/
+    line-height: 38px; /*43*/
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.sg_form .formInner a {
+    display: inline-block;
+    width: 18%;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+.sg_form .idInner input {
+    width: 79%;
+}
+.sg_form .eInner {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+.sg_form .eInner input {
+    width: 30.5%;
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 3%;
+    font-size: 1.1rem;
+/*
+    height: 45px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0px;
+*/
+}
+.sg_form .eInner input:last-of-type {
+    width: 35%;
+}
+.sg_form .eInner select {
+    width: 27.5%;
+    height: 40px;
+    margin-left: 1%; /*10*/
+    padding-left: 5px;
+/*
+    font-size: 1.2rem;
+    border: 1px solid #888;
+*/
+}
+.sg_form .phInner select {
+    width: 30.5%;
+    height: 40px;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+*/
+    margin-right: 1%;
+}
+.sg_form .phInner input {
+    width: 67.5%;
+}
+.mtypeWrap {
+    height: 60px;
+    line-height: 60px;
+}
+.mtypeWrap label {
+/*    width: 25%;*/
+    line-height: 60px;   
+}
+.mtypeWrap .mtype {
+/*    width: 80%;*/
+    line-height: 60px;
+}
+.sg_form .mtype span {
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+/*
+.sg_form .mtype input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+*/
+.delivery {
+    height: 70px;
+}
+.delivery label {
+    width: 25%;
+    line-height: 60px;
+}
+.delivery .deInner {
+    width: 70%;
+    line-height: 60px;
+}
+.delivery .deInner select {
+    width: 50%;
+    height: 40px;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.bizWrap {
+    width: 100%;
+    margin-top: 60px;
+}
+/*
+.biz {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+*/
+.biz .biz_form {
+/*
+    display: inline-flex;
+    width: 100%;
+*/
+    height: 75px;
+    line-height: 75px;
+    margin-top: 10px;
+/*    border-bottom: 1px solid #eee;*/
+}
+.biz .biz_form label {
+    width: 100%;
+}
+.biz .biz_form label > span {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+/*    font-size: 1.4rem;*/
+    float: left;
+}
+.biz .biz_form label > input {
+    width: 100%;
+/*
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+*/
+    margin-top: 0px;
+}
+.biz .addr a {
+    width: 20%;
+}
+.btnWrap {
+    width: 64%; 
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.btnWrap a {
+/*
+    display: inline-block;
+    width: 48%;
+    height: 46px;
+    line-height: 46px;
+*/
+    font-size: 1.4rem;
+/*
+    text-align: center;
+    color: #fff;
+    background-color: #052C69;
+*/
+}
+.btnWrap a:first-child {
+    margin-right: 2%;
+}
+}
+@media all and (max-width: 580px) {
+.wrap {
+    width: 93.02%;
+/*    margin-bottom: 65px;*/
+}
+header {
+    width: 64%; /*768px*/
+    padding-top: 40px;
+}
+header h1 {
+    width: 143px;
+    height: 25px;
+    margin-bottom: 40px;
+}
+.signup {
+    width: 76%; /*768px*/
+}
+.signup h2 {
+    font-size: 1.6rem;
+}
+.signup form {
+    width: 100%;
+/*    margin-top: 10px;*/
+}
+.sg_form {
+    display: block;
+/*    width: 100%;*/
+    height: 80px;
+    line-height: 80px;
+/*
+    margin-top: 10px;
+    border-bottom: none;
+*/
+}
+.sg_form label {
+/*
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+*/
+    font-size: 1.3rem;
+/*    float: left;*/
+}
+/*
+.sg_form label span {
+    font-size: 1.4rem;
+    color: #E84743;
+    margin-right: 2px;
+}
+*/
+.sg_form .formInner {
+    display: inline-block;
+    width: 100%;
+    height: 40px; /*45*/
+    line-height: 40px; /*45*/
+    padding: 0;
+    float: left;
+}
+.sg_form .formInner input {
+    display: inline-block;
+    width: 100%;
+    height: 40px; /*45*/
+    line-height: 38px; /*43*/
+    font-size: 1.1rem;
+    color: #888;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.sg_form .formInner a {
+    display: inline-block;
+    width: 18%;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+.sg_form .idInner input {
+    width: 79%;
+}
+.sg_form .eInner {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+.sg_form .eInner input {
+    width: 30%;
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 3%;
+    font-size: 1.1rem;
+/*
+    height: 45px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0px;
+*/
+}
+.sg_form .eInner input:last-of-type {
+    width: 35%;
+}
+.sg_form .eInner select {
+    width: 27%;
+    height: 40px;
+    margin-left: 1%; /*10*/
+    padding-left: 0px;
+    font-size: 1.1rem;
+/*
+    font-size: 1.2rem;
+    border: 1px solid #888;
+*/
+}
+.sg_form .phInner select {
+    width: 30%;
+    height: 40px;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+*/
+    margin-right: 1%;
+}
+.sg_form .phInner input {
+    width: 67.5%;
+}
+.mtypeWrap {
+    height: 60px;
+    line-height: 60px;
+}
+.mtypeWrap label {
+/*    width: 25%;*/
+    line-height: 60px;   
+}
+.mtypeWrap .mtype {
+/*    width: 80%;*/
+    line-height: 60px;
+}
+.sg_form .mtype span {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+.sg_form .mtype input[type="radio"] {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+.delivery {
+    height: 70px;
+}
+.delivery label {
+    width: 25%;
+    line-height: 60px;
+}
+.delivery .deInner {
+    width: 70%;
+    line-height: 60px;
+}
+.delivery .deInner select {
+    width: ;
+    height: 40px;
+    padding-left: 0;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.bizWrap {
+    width: 100%;
+    margin-top: 60px;
+}
+/*
+.biz {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+*/
+.biz .biz_form {
+/*
+    display: inline-flex;
+    width: 100%;
+*/
+    height: 75px;
+    line-height: 75px;
+    margin-top: 10px;
+/*    border-bottom: 1px solid #eee;*/
+}
+/*
+.biz .biz_form label {
+    width: 100%;
+}
+*/
+.biz .biz_form label > span {
+/*
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+*/
+/*    padding-left: 0px;*/
+    font-size: 1.3rem;
+/*    float: left;*/
+}
+.biz .biz_form label > input {
+    width: 100%;
+    font-size: 1.1rem;
+    
+/*
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+*/
+    margin-top: 0px;
+}
+
+/*
+.biz .addr {
+    display: inline-flex;
+    width: 100%;
+    height: 170px;
+    border-bottom: none;
+}
+*/
+.biz .addr label {
+    width: 100%;
+}
+.biz .addr label {
+/*
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-left: 10px;
+*/
+    font-size: 1.3rem;
+/*    float: left;*/
+}
+.biz .addr input {
+/*
+    width: 60%;
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+*/
+    font-size: 1.1rem;
+/*    margin-top: 10px;*/
+}
+/*
+    .biz .addr input:first-of-type {
+        margin-top: 15px;
+    }
+*/
+/*
+.biz .addr input:nth-of-type(2),
+.biz .addr input:nth-of-type(3) {
+    width: 100%;
+    margin-left: 0%;
+}
+*/
+.biz .addr a {
+    width: 20%;
+/*
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+*/
+    font-size: 1.1rem;
+/*
+    float: left;
+    border: 1px solid #888;
+    margin-left: 1.3%;
+    margin-top: 17px;
+*/
+}
+
+.btnWrap {
+}
+.btnWrap a {
+    display: inline-block;
+    width: 48%;
+    height: 42px;
+    line-height: 40px;
+    font-size: 1.4rem;
+/*
+    text-align: center;
+    color: #fff;
+    background-color: #052C69;
+*/
+}
+/*
+.btnWrap a:first-child {
+    color: #052C69;
+    border: 1px solid #052c69;
+    background-color: #fff;
+    margin-right: 2.4%;
+}
+*/
+}
+@media all and (max-width: 500px) {
+.wrap {
+    width: 93.02%;
+/*    margin-bottom: 65px;*/
+}
+header {
+    width: 64%; /*768px*/
+    padding-top: 40px;
+}
+header h1 {
+    width: 143px;
+    height: 25px;
+    margin-bottom: 40px;
+}
+.signup {
+    width: 78%; /*768px*/
+}
+.signup h2 {
+    font-size: 1.6rem;
+}
+.signup form {
+    width: 100%;
+/*    margin-top: 10px;*/
+}
+.sg_form {
+    display: block;
+/*    width: 100%;*/
+    height: 80px;
+    line-height: 80px;
+/*
+    margin-top: 10px;
+    border-bottom: none;
+*/
+}
+.sg_form label {
+/*
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+*/
+    font-size: 1.3rem;
+/*    float: left;*/
+}
+/*
+.sg_form label span {
+    font-size: 1.4rem;
+    color: #E84743;
+    margin-right: 2px;
+}
+*/
+.sg_form .formInner {
+    display: inline-block;
+    width: 100%;
+    height: 40px; /*45*/
+    line-height: 40px; /*45*/
+    padding: 0;
+    float: left;
+}
+.sg_form .formInner input {
+    display: inline-block;
+    width: 100%;
+    height: 40px; /*45*/
+    line-height: 38px; /*43*/
+    font-size: 1.1rem;
+    color: #888;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.sg_form .formInner a {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    line-height: 38px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #052c69;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+.sg_form .idInner input {
+    width: 77%;
+}
+.sg_form .eInner {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+.sg_form .eInner input {
+    width: 30%;
+}
+.sg_form .eInner span {
+    display: inline-block;
+    width: 3%;
+    font-size: 1.1rem;
+/*
+    height: 45px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0px;
+*/
+}
+.sg_form .eInner input:last-of-type {
+    width: 35%;
+}
+.sg_form .eInner select {
+    width: 27%;
+    height: 40px;
+    margin-left: 1%; /*10*/
+    padding-left: 0px;
+    font-size: 1.1rem;
+/*
+    font-size: 1.2rem;
+    border: 1px solid #888;
+*/
+}
+.sg_form .phInner select {
+    width: 30%;
+    height: 40px;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+*/
+    margin-right: 1%;
+}
+.sg_form .phInner input {
+    width: 67.5%;
+}
+.mtypeWrap {
+    height: 60px;
+    line-height: 60px;
+}
+.mtypeWrap label {
+/*    width: 25%;*/
+    line-height: 60px;   
+}
+.mtypeWrap .mtype {
+/*    width: 80%;*/
+    line-height: 60px;
+}
+.sg_form .mtype span {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+.sg_form .mtype input[type="radio"] {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+.delivery {
+    height: 70px;
+}
+.delivery label {
+    width: 25%;
+    line-height: 60px;
+}
+.delivery .deInner {
+    width: 70%;
+    line-height: 60px;
+}
+.delivery .deInner select {
+    width: ;
+    height: 40px;
+    padding-left: 0;
+/*
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 1px solid #888;
+*/
+}
+.bizWrap {
+    width: 100%;
+    margin-top: 60px;
+}
+/*
+.biz {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #052C69;
+}
+*/
+.biz .biz_form {
+/*
+    display: inline-flex;
+    width: 100%;
+*/
+    height: 75px;
+    line-height: 75px;
+    margin-top: 10px;
+/*    border-bottom: 1px solid #eee;*/
+}
+/*
+.biz .biz_form label {
+    width: 100%;
+}
+*/
+.biz .biz_form label > span {
+/*
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+*/
+/*    padding-left: 0px;*/
+    font-size: 1.3rem;
+/*    float: left;*/
+}
+.biz .biz_form label > input {
+    width: 100%;
+    font-size: 1.1rem;
+    
+/*
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    border: 1px solid #ccc;
+*/
+    margin-top: 0px;
+}
+
+/*
+.biz .addr {
+    display: inline-flex;
+    width: 100%;
+    height: 170px;
+    border-bottom: none;
+}
+*/
+.biz .addr label {
+    width: 100%;
+}
+.biz .addr label > span {
+/*
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-left: 10px;
+*/
+    font-size: 1.3rem;
+/*    float: left;*/
+}
+.biz .addr input {
+/*
+    width: 60%;
+    height: 45px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+*/
+    font-size: 1.1rem;
+/*    margin-top: 10px;*/
+}
+/*
+    .biz .addr input:first-of-type {
+        margin-top: 15px;
+    }
+*/
+/*
+.biz .addr input:nth-of-type(2),
+.biz .addr input:nth-of-type(3) {
+    width: 100%;
+    margin-left: 0%;
+}
+*/
+.biz .addr a {
+    width: 23%;
+/*
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+*/
+    font-size: 1.1rem;
+/*
+    float: left;
+    border: 1px solid #888;
+    margin-left: 1.3%;
+    margin-top: 17px;
+*/
+}
+}

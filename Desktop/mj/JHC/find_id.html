@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="블루투스 스캐너, 프린터">
+    <meta name="description" content="물류 IT 전문기업 주식회사 제이에이치씨 쇼핑몰입니다.">
+    <meta name="title" content="JHCSHOP">
+    <meta property="og:keywords" content="블루투스 스캐너, 프린터">
+    <meta property="og:description" content="물류 IT 전문기업 주식회사 제이에이치씨 쇼핑몰입니다.">
+    <meta property="og:title" content="JHCSHOP">
+    <title>JHCONCIERGE</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/find_id.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('.find a:first-of-type').on('click', function(e){
+                $('.findPw').css('display','none');
+                $('.findId').css('display','block');
+                $(this).hasClass('active');
+                 
+            });
+            
+            $('.find a:last-of-type').on('click', function(e){
+                $('.findId').css('display','none');
+                $('.findPw').css('display','block');
+                $(this).hasClass('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1><img src="images/header_JHC_logo.svg" alt="로고"></h1>
+        </header>
+        <div class="conWrap">
+            <div class="find">
+                <a href="#">아이디 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+            </div>
+            <div class="findId">
+                <h2>아이디찾기</h2>
+                <form action="#">
+                    <div class="idform">
+                        <label for="userName">이름</label>
+                        <input type="text" id="userName" placeholder="이름">
+                    </div>
+                    <div class="idform phone">
+                        <label for="phoneNum">휴대전화</label>
+                        <select id="phoneNum" required>
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                        <input type="text" id="phone" maxlength="8" placeholder="-없이 입력">
+                        <button type="button"><span>인증번호전송</span></button>
+                    </div><!--//phone-->
+                    <div class="idform">
+                        <label for="conf">인증번호</label>
+                        <input type="text" id="conf" placeholder="인증번호">
+                    </div>
+                    <div class="idform logi">
+                        <label for="logi">택배사</label>
+                        <select id="logi">
+                            <option value="선택" selected disabled hidden>선택</option>
+                            <option value="CJ대한통운">CJ대한통운</option>
+                            <option value="KG로지스">KG로지스</option>
+                            <option value="건영택배">건영택배</option>
+                            <option value="로젠택배">로젠택배</option>
+                            <option value="롯데택배">롯데택배</option>
+                            <option value="일양로지스">일양로지스</option>
+                            <option value="한진택배">한진택배</option>
+                            <option value="한덱스">한덱스</option>
+                            <option value="일반회원">일반회원</option>
+                        </select>
+                    </div>
+                </form>
+            </div><!--//findId-->
+            
+            
+            <div class="findPw">
+                <h2>비밀번호 찾기</h2>
+                <form action="#">
+                    <div class="idform">
+                        <label for="userId">아이디</label>
+                        <input type="text" id="userId">
+                    </div>
+                    <div class="idform">
+                        <label for="user">이름</label>
+                        <input type="text" id="user">
+                    </div>
+                    <div class="idform phone">
+                        <label for="phone_1">휴대전화</label>
+                        <select id="phone_1" required>
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                        <input type="text" id="phone_2" maxlength="8" placeholder="-없이 입력">
+                        <button type="button"><span>인증번호전송</span></button>
+                    </div><!--//phone-->
+                </form>
+            </div><!--//findPw-->
+            
+            <div class="btnWrap">
+                <a href="#">취소</a>
+                <a href="#">찾기</a>
+            </div><!--//btnWrap-->
+        </div><!--//conWrap-->
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="블루투스 스캐너, 프린터">
+    <meta name="description" content="물류 IT 전문기업 주식회사 제이에이치씨 쇼핑몰입니다.">
+    <meta name="title" content="JHCSHOP">
+    <meta property="og:keywords" content="블루투스 스캐너, 프린터">
+    <meta property="og:description" content="물류 IT 전문기업 주식회사 제이에이치씨 쇼핑몰입니다.">
+    <meta property="og:title" content="JHCSHOP">
+    <title>JHCONCIERGE</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/signup.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1><img src="images/header_JHC_logo.svg" alt="로고"></h1>
+        </header>
+        <div class="signup">
+            <h2>회원가입</h2>
+            <form action="#">
+                <div class="sg_form">
+                    <label for="user"><span>&#42;</span>아이디</label>
+                    <div class="formInner idInner">
+                        <input type="text" id="user" value="" maxlength="20" placeholder="아이디">
+                        <a href="#">중복확인</a>
+                    </div>
+                </div><!--//user-->
+                <div class="sg_form">
+                    <label for="pw"><span>&#42;</span>비밀번호</label>
+                    <div class="formInner">
+                        <input type="text" id="pw" value="" maxlength="20" placeholder="비밀번호">
+                    </div>
+                </div><!--//pw-->
+                <div class="sg_form">
+                    <label for="pwCheck"><span>&#42;</span>비밀번호 확인</label>
+                    <div class="formInner">
+                        <input type="text" id="pwCheck" value="" maxlength="20" placeholder="비밀번호를 한번 더 입력해 주세요">
+                    </div>
+                </div><!--//pwCheck-->
+                <div class="sg_form">
+                    <label for="name"><span>&#42;</span>이름</label>
+                    <div class="formInner">
+                        <input type="text" id="name" value="" maxlength="20" placeholder="이름">
+                    </div>
+                </div><!--//name-->
+                <div class="sg_form">
+                    <label for="email"><span>&#42;</span>이메일</label>
+                    <div class="formInner eInner">
+                        <input type="text" name="email" id="email" placeholder="이메일" required>
+                        <span>@</span>
+                        <input type="text" class="e2" name="email" id="email2" value="" placeholder="ex) naver.com" disabled>
+                        <select>
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="직접입력">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                        </select>
+                    </div>
+                </div><!--//email-->
+                <div class="sg_form">
+                    <label for="phone"><span>&#42;</span>휴대전화</label>
+                    <div class="formInner phInner">
+                        <select required>
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                        <input type="tel" name="phone" id="phone" maxlength="8" placeholder="'&ndash;'없이 숫자만 입력해 주세요" required>
+                    </div>
+                </div><!--//phone-->
+                <div class="sg_form mtypeWrap">
+                    <label for="mtype"><span>&#42;</span>회원유형</label>
+                    <div class="mtype">
+                        <input type="radio" id="mtype" name="type"><span>개인</span>
+                        <input type="radio" id="enter" name="type"><span>기업</span>
+                    </div>
+                </div><!--//membertype-->
+                <div class="sg_form delivery">
+                    <label><span>&#42;</span>택배사</label>
+                    <div class="formInner deInner">
+                        <select>
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="CJ대한통운">CJ대한통운</option>
+                            <option value="KG로지스">KG로지스</option>
+                            <option value="건영택배">건영택배</option>
+                            <option value="로젠택배">로젠택배</option>
+                            <option value="롯데택배">롯데택배</option>
+                            <option value="일양로지스">일양로지스</option>
+                            <option value="한진택배">한진택배</option>
+                            <option value="한덱스">한덱스</option>
+                            <option value="일반회원">일반회원</option>
+                        </select> 
+                    </div>
+                </div><!--//delivery-->
+                
+                <div class="bizWrap">
+                    <h2>사업자 정보</h2>
+                    <div class="biz">
+                        <div class="biz_form">
+                            <label>
+                                <span>사업자 정보</span>
+                                <input type="text" name="bizInfo" placeholder="사업자 정보를 입력하세요">
+                            </label>
+                        </div><!--//bizInfo-->
+                        <div class="biz_form">
+                            <label>
+                                <span>상호</span>
+                                <input type="text" name="bizName" placeholder="상호를 입력하세요">
+                            </label>
+                        </div><!--//bizName-->
+                        <div class="biz_form">
+                            <label>
+                                <span>대표자</span>
+                                <input type="text" name="rep" placeholder="대표자를 입력하세요">
+                            </label>
+                        </div><!--//rep-->
+                        <div class="biz_form">
+                            <label>
+                                <span>사업자 등록번호</span>
+                                <input type="text" name="reg" placeholder="'&ndash;'제외 숫자만 입력하세요">
+                            </label>
+                        </div><!--//reg-->
+                        <div class="biz_form">
+                            <label>
+                                <span>업태</span>
+                                <input type="text" name="type" placeholder="업태를 입력하세요">
+                            </label>
+                        </div><!--//type-->
+                        <div class="biz_form">
+                            <label>
+                                <span>종목</span>
+                                <input type="text" name="detailType" placeholder="종목을 입력하세요">
+                            </label>
+                        </div><!--//detailType-->
+                        <div class="addr">
+                           <label for="addr">주소</label>
+                                <input type="text" id="addr" name="addr" placeholder="우편번호" readonly><a href="#">주소검색</a>
+                                <input type="text" name="addr" placeholder="기본주소" readonly>
+                                <input type="text" name="addr" placeholder="상세주소 및 상세건물명">
+                        </div><!--//addr-->
+                        <div class="biz_form">
+                           <label>
+                                <span>담당자 이름</span>
+                               <input type="text" placeholder="담당자 이름을 입력하세요">
+                           </label>
+                        </div><!--//charName-->
+                        <div class="biz_form">
+                            <label>
+                                <span>담당자 이메일</span>
+                                <input type="text" placeholder="담당자 이메일을 입력해주세요">
+                            </label>
+                        </div><!--//charEmail-->
+                        <div class="biz_form">
+                            <label>
+                                <span>담당자 휴대전화</span>
+                                <input type="text" placeholder="담당자 핸드폰 번호를 '&ndash;'를 포함하여 입력하세요">
+                            </label>
+                        </div><!--//charPhone-->
+                    </div><!--//biz-->
+                </div><!--//bizWrap-->
+            </form>
+            <div class="btnWrap">
+                <a href="#">취소</a>
+                <a href="#">회원가입</a>
+            </div>
+        </div><!--//signup-->
+    </div>
+    
+   
+</body>
+</html>

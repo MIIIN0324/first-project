@@ -1,0 +1,564 @@
+@charset "utf-8";
+
+.conWrap {
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+.location {
+    width: 1200px;
+    margin: 0 auto;
+}
+.location ul {
+    width: 150px;
+    height: 15px;
+}
+.location li {
+    display: flex;
+    font-size: 1.2rem;
+    float: left;
+}
+.location li::after {
+    content: ">";
+    padding: 0 5px;
+}
+.location li:last-child::after {
+    display: none;
+}
+.location li:hover a {
+    text-decoration: underline;
+}
+.conInner {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+.conInner .conUpper {
+    width: 100%;
+    height: 550px;
+}
+.conInner .conUpper .proImg {
+    width: 45.8%;
+    height: 550px;
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 10px;
+    margin-right: 4%;
+    float: left;
+}
+.conInner .conUpper .proImg img {
+    width: 510px;
+    height: 510px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.conInner .conUpper .proInfo {
+    width: 50%;
+    height: 550px;
+    float: right;
+}
+.conInner .conUpper .proInfo > h3 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.conInner .conUpper .proInfo > span:first-of-type {
+    font-size: 3rem;
+}
+
+.conInner .conUpper .proInfo > span:last-of-type {
+    font-size: 1.8rem;
+}
+.conInner .conUpper .proInfo .infoWrap {
+    width: 100%;
+    height: 225px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #ddd;
+    margin-top: 25px;
+    padding-top: 30px;
+}
+.conInner .conUpper .proInfo .infoWrap > p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: #666;
+}
+.conInner .conUpper .proInfo .infoWrap > p:first-of-type {
+    width: 20%;
+    height: 60px;
+    margin-right: 10%;
+    float: left;
+}
+.conInner .conUpper .proInfo .infoWrap > p:last-of-type {
+    width: 100%;
+    height: 60px;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 0 5%;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner .name {
+    width: 40%;
+    line-height: 70px;
+    font-size: 1.8rem;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner .num {
+    display: flex;
+    width: 30%;
+    height: 35px;
+    margin-right: 0%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top:17px;
+}
+.infoInner .num button {
+    display: block;
+    width: 25%;
+    height: 33px;
+}
+.infoInner .num button:first-child {
+    float: left;
+    border-right: 1px solid #ddd;
+}
+.infoInner .num button:last-child {
+    float: right;
+    border-left: 1px solid #ddd;
+}
+.infoInner .num button span {
+    display: inline-block;
+    margin-top: -2px;
+    font-size: 2rem;
+}
+.infoInner .num > p {
+    width: 50%;
+    height: 33px;
+    line-height: 33px;
+    font-size: 1.8rem;
+    float: left;
+    text-align: center;
+}
+.infoInner .price {
+    width: 30%;
+    line-height: 70px;
+    font-size: 1.8rem;
+    text-align: right;
+}
+.proInfo .totalPrice {
+    width: 100%;
+    margin: 40px 0 50px 0;
+    text-align: right;
+}
+.proInfo .totalPrice > span:first-of-type {
+    font-size: 1.6rem;
+    margin-right: 8%;
+}
+.proInfo .totalPrice > span:nth-of-type(2) {
+    font-size: 3rem;
+    font-weight: 550;
+    color: #052C69;
+    margin-right: 1%
+}
+.proInfo .totalPrice > span:last-of-type {
+    font-size: 1.6rem;
+    font-weight: 550;
+    color: #052C69;
+}
+.proInfo > a {
+    width: 48%;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    border: 1px solid #052C69;
+    border-radius: 10px;
+    color: #052C69;
+    font-size: 2rem;
+    font-weight: 550;
+    float: left;
+    margin-right: 4%
+}
+.proInfo > a:last-child {
+    margin-right: 0;
+    color: #fff;
+    background-color: #052C69;
+}
+.proInfo > a:hover {font-size: 2.1rem;}
+.conInner .conBottom {
+     margin-top: 100px;
+}
+.conInner .conBottom .tab {
+    width: 100%;
+    height: 60px;
+    line-height: 58px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+}
+.conInner .conBottom input {
+    display: none;
+}
+.conInner .conBottom input + label {
+    display: inline-block;
+    width: 50%;
+    height: 58px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.conInner .conBottom input:first-child + label {
+    float: left;
+    border-right: 1px solid #ddd;
+}
+.conInner .conBottom input[type="radio"]:checked + label{
+    color: #052C69;
+    font-weight: bold;
+    border-bottom: 2px solid #052C69;
+}
+.conInner .conBottom .detailImg img{
+    margin: 0 auto;
+}
+.conInner .conBottom .detailImg img:last-child {
+    width: 70%;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 1290px) {
+.location {
+    width: 92.3%;
+}
+.conInner {
+    width: 92.3%;
+}
+.conInner .conUpper .proImg img {
+    width: 430px; /*510*/
+    height: 430px;
+    margin-top: 60px;
+} 
+}
+@media all and (max-width: 1024px) {
+.conInner .conUpper {
+    width: 100%;
+    height: 450px;
+}
+.conInner .conUpper .proImg {
+    width: 45.8%;
+    height: 450px; /*550*/
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 10px;
+    margin-right: 4%;
+    float: left;
+}
+.conInner .conUpper .proImg img {
+    width: 320px; /*430*/
+    height: 320px;
+    margin-top: 65px;
+}
+.conInner .conUpper .proInfo {
+    width: 50%;
+    height: 450px; /*550*/
+    float: right;
+}
+.conInner .conUpper .proInfo > h3 {
+    font-size: 2.6rem; /*3*/
+    margin-bottom: 20px; /*30*/
+}
+.conInner .conUpper .proInfo > span:first-of-type {
+    font-size: 2.6rem; /*3*/
+}
+.conInner .conUpper .proInfo > span:last-of-type {
+    font-size: 1.4rem; /*1.8*/
+    margin-right: 4%;
+}
+.conInner .conUpper .proInfo .infoWrap {
+    height: 180px; /*225*/
+    margin-top: 20px;
+    padding-top: 20px; /*30*/
+}
+.conInner .conUpper .proInfo .infoWrap > p {
+    font-size: 1.4rem; /*1.5*/
+    line-height: 2.4rem; /*2.8*/
+    color: #666;
+}
+.conInner .conUpper .proInfo .infoWrap > p:first-of-type {
+    height: 60px;
+    margin-right: 10%;
+    float: left;
+}
+.conInner .conUpper .proInfo .infoWrap > p:last-of-type {
+    height: 60px;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner {
+    margin-top: 5px; 
+}
+.proInfo .totalPrice {
+    width: 100%;
+    margin: 30px 0 40px 0;
+    text-align: right;
+}
+.proInfo .totalPrice > span:first-of-type {
+    font-size: 1.6rem;
+    margin-right: 8%;
+}
+.proInfo .totalPrice > span:nth-of-type(2) {
+    font-size: 2.6rem; /*3*/
+}
+.proInfo > a {
+    height: 55px;
+    line-height: 53px;
+    font-size: 1.8rem;
+}
+.proInfo > a:hover {font-size: 1.9rem;}
+.conInner .conBottom input + label {
+    font-size: 1.6rem;
+}
+.conInner .conBottom .detailImg img{
+    margin: 0 auto;
+    width: 80%
+}
+.conInner .conBottom .detailImg img:last-child {
+    width: 80%;
+    margin-top: 20px;
+}
+}
+@media all and (max-width: 1000px) {
+    .conWrap{margin-top: 110px;}
+}
+@media all and (max-width: 768px) {
+.conWrap {margin-top: 80px;}
+.conInner .conUpper {
+    width: 100%;
+    height: 350px;
+}
+.conInner .conUpper .proImg {
+    height: 350px; 
+    margin-right: 2%;
+}
+.conInner .conUpper .proImg img {
+    width: 240px; /*320*/
+    height: 240px;
+    margin-top: 55px;
+}
+.conInner .conUpper .proInfo {
+    width: 52%;
+    height: 350px; /*450*/
+    float: right;
+}
+.conInner .conUpper .proInfo > h3 {
+    font-size: 2.4rem; /*2.6*/
+    margin-bottom: 15px; /*20*/
+}
+.conInner .conUpper .proInfo > span:first-of-type {
+    font-size: 2.4rem; /*2.6*/
+}
+.conInner .conUpper .proInfo .infoWrap {
+    height: 140px; /*180*/
+    margin-top: 10px; /*20*/
+    padding-top: 10px; /*20*/
+}
+.conInner .conUpper .proInfo .infoWrap > p {
+    font-size: 1.2rem; /*1.4*/
+    line-height: 2.3rem; /*2.4*/
+}
+.conInner .conUpper .proInfo .infoWrap > p:first-of-type {
+    height: 50px;
+    margin-right: 10%;
+    float: left;
+}
+.conInner .conUpper .proInfo .infoWrap > p:last-of-type {
+    height: 50px;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner {
+    height: 60px; /*70*/ 
+    padding: 0 3%;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner .name {
+    width: 35%;
+    line-height: 60px;
+    font-size: 1.4rem;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner .num {
+    display: flex;
+    width: 33%;
+    height: 25px;
+    margin-right: 0%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top:17px;
+    margin-right: 0%;
+}
+.infoInner .num button {
+    display: block;
+    width: 25%;
+    height: 25px;
+}
+.infoInner .num button span {
+    margin-top: -15px;
+    font-size: 1.4rem;
+}
+.infoInner .num > p {
+    height: 25px;
+    line-height: 23px;
+    font-size: 1.2rem;
+}
+.infoInner .price {
+    width: 30%;
+    line-height: 60px;
+    font-size: 1.4rem;
+}
+.proInfo .totalPrice {
+    margin: 18px 0 20px 0;
+}
+.proInfo .totalPrice > span:first-of-type {
+    font-size: 1.4rem;
+}
+.proInfo .totalPrice > span:nth-of-type(2) {
+    font-size: 2.4rem; /*3*/
+}
+.proInfo .totalPrice > span:last-of-type {
+    font-size: 1.4rem;
+}
+.proInfo > a {
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.6rem;
+}
+.proInfo > a:hover {font-size: 1.7rem;}
+.conInner .conBottom {
+    margin-top: 80px;
+}
+.conInner .conBottom .tab {
+    width: 100%;
+    height: 55px;
+    line-height: 53px;
+    margin-bottom: 30px;
+}
+.conInner .conBottom input + label {
+    height: 53px;
+    font-size: 1.5rem;
+}
+}
+@media all and (max-width: 580px) {
+.conWrap {margin-top: 80px;}
+.conInner .conUpper {
+    width: 100%;
+    height: 600px; /*350*/
+}
+.conInner .conUpper .proImg {
+    width: 100%;
+    height: 250px;
+    margin-right: 0%;
+    float: none;
+}
+.conInner .conUpper .proImg img {
+    width: 240px;
+    height: 240px;
+/*    margin: 0 auto;*/
+    margin-top: 5px;
+}
+.conInner .conUpper .proInfo {
+    width: 100%;
+    height: 312px; /*350*/
+    float: none;
+    margin-top: 20px;
+}
+.conInner .conUpper .proInfo > h3 {
+    font-size: 2rem; /*2.4*/
+    margin-bottom: 5px; /*15*/
+}
+.conInner .conUpper .proInfo > span:first-of-type {
+    font-size: 2rem; /*2.4*/
+}
+.conInner .conUpper .proInfo .infoWrap {
+    height: 130px; /*180*/
+    margin-top: 10px; /*20*/
+    padding-top: 10px; /*20*/
+}
+.conInner .conUpper .proInfo .infoWrap > p {
+    font-size: 1.2rem; /*1.4*/
+    line-height: 2.2rem; /*2.3*/
+}
+.conInner .conUpper .proInfo .infoWrap > p:first-of-type {
+    height: 50px;
+    margin-right: 10%;
+}
+.conInner .conUpper .proInfo .infoWrap > p:last-of-type {
+    height: 50px;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner {
+    height: 50px; /*60*/ 
+    padding: 0 3%;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner .name {
+    width: 43%;
+    line-height: 50px;
+    font-size: 1.4rem;
+}
+.conInner .conUpper .proInfo .infoWrap .infoInner .num {
+    display: flex;
+    width: 30%;
+    height: 25px;
+    margin-right: 0%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 12px;
+    margin-right: 0%;
+}
+.infoInner .num button {
+    display: block;
+    width: 25%;
+    height: 25px;
+}
+.infoInner .num button span {
+    margin-top: -15px;
+    font-size: 1.4rem;
+}
+.infoInner .num > p {
+    height: 25px;
+    line-height: 23px;
+    font-size: 1.2rem;
+}
+.infoInner .price {
+    width: 27%;
+    line-height: 50px;
+    font-size: 1.4rem;
+}
+.proInfo .totalPrice {
+    margin: 18px 0 20px 0;
+}
+.proInfo .totalPrice > span:first-of-type {
+    font-size: 1.4rem;
+}
+.proInfo .totalPrice > span:nth-of-type(2) {
+    font-size: 2.2rem; /*2.4*/
+}
+.proInfo .totalPrice > span:last-of-type {
+    font-size: 1.4rem;
+}
+.proInfo > a {
+    height: 45px;
+    line-height: 43px;
+    font-size: 1.5rem;
+}
+.proInfo > a:hover {font-size: 1.6rem;}
+.conInner .conBottom {
+    margin-top: 50px;
+}
+.conInner .conBottom .tab {
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+.conInner .conBottom input + label {
+    height: 48px;
+    font-size: 1.4rem;
+}
+}
+
+
+
+
+
+
